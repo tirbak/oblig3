@@ -1,10 +1,51 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+
 
 .minAmna{
     font-family: 'Shadows Into Light Two', cursive;
     border: 3px solid rgb(30, 108, 139) ;
     border-style: solid;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+
+    
 }
 
+h2 {
+    width: 100%;
+}
+
+.picture {
+    width: 30%;
+    float: right;
+}
+img{
+   width: 100%;
+    
+}
+.tekst {
+    max-width: 10px;
+    display: flex;
+}
+
+.p-container {
+    width: 70%;
+    float: left;
+}
+
+p {
+    margin-right: 2rem;
+}
 .minNana{
     font-family: Arial, Helvetica, sans-serif;
     border: 3px solid rgb(151, 78, 194) ;
