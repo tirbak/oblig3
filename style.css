@@ -6,50 +6,9 @@ body{
     background-color:#bda6d4;
 }
 
-.container{
-    display: grid;
-    /*grid-template-areas:
-        "header header"
-        "førsteInntrykk datatorget"
-        "funfacts funfacts";*/
+.boks1{
+    display:grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 25% 25% 25% 25%;
-    }
-
-.header{
-    grid-column-start:1;
-    grid-column-end:3;
-    grid-row-start: 1;
-    grid-row-end: 2; 
-}
-
-h1{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.førsteInntrykk{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-
-
-.datatorget{
-    grid-column-start:2;
-    grid-column-end:3;
-    grid-row-start: 3;
-    grid-row-end: 4; 
-}
-
-.funfacts{
-    grid-column-start:1;
-    grid-column-end:3;
-    grid-row-start:4;
-    grid-row-end: 5; 
 }
 
 header ul {
@@ -71,9 +30,6 @@ h1{
 h2, p, li{
     font-family: 'Oswald', sans-serif;
 }
-
-
-
 
 .funfacts > ul > li{
     list-style-type: none;
