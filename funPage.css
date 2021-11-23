@@ -11,14 +11,14 @@ body {
 
 
 .minAmna{
-    font-family: 'Shadows Into Light Two', cursive;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.7;
     border: 3px solid rgb(30, 108, 139) ;
     border-style: solid;
     display: flex;
     flex-direction: column;
     padding: 3rem;
-
-    
+    font-size: 18pt;
 }
 
 h2 {
