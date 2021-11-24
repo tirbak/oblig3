@@ -18,7 +18,10 @@ body {
     display: flex;
     flex-direction: column;
     padding: 3rem;
+<<<<<<< HEAD
     font-size: 18pt;
+=======
+>>>>>>> 19a48e543778597e89f25e0f135dd85b314bcfca
 }
 
 h2 {
