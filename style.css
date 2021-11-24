@@ -10,7 +10,7 @@
 body{
     background-image: url("images/pexels-mathias-pr-reding-10246142.jpg");
     background-size: cover; 
-    background-color:#bda6d4;
+    background-color:rgb(226, 201, 173);
 }
 
 header ul {
@@ -18,7 +18,7 @@ header ul {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
     list-style-type: none;
-    background-color: #b15e69;
+    background-color: #bb792dab;
     padding: 2rem;
     margin: 0 1rem;
     border-radius: 25px;
@@ -27,23 +27,21 @@ header ul {
 header ul li a{
     text-decoration: none;
     color: black;
-}
-
-.boks1{
-    display:grid;
-    grid-template-columns: 50% 50%;
+    text-transform: uppercase;
 }
 
 .førsteInntrykk, .datatorget, .funfacts{
     margin: 1rem;
     padding: 1rem;
-    background-color: #8a444d;
+    background-color: #bb792d;
     border-radius: 25px;
 }
 
-.boks2{
-    display:grid;
-    grid-template-columns: 50% 50%;
+.samfunnsverdier, .Programmer{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #bb792d;
+    border-radius: 25px;
 }
 
 .boks2 > img{
@@ -55,17 +53,18 @@ header ul li a{
 
 h1, h2{
     text-align: center;
+    text-transform: uppercase;
 }
 
 h1{
-    color:rgb(204, 163, 163);
+    color:rgb(216, 188, 155);
 }
 
 p, h1, h2, li{
     font-family: raleway, sans-serif;
 }
 
-p{
+p, li{
     line-height: 30px;
 }
 
@@ -74,19 +73,14 @@ p{
 }
 
 .funfacts > ul > li::before{
-    content: "\1F64C";
+    content: "\1F341";
 }
 
 .boks{
     margin: 2rem 1rem;
     padding: 1rem;
-    background-color: #ac78ac;
+    background-color: #bb792d;
     border-radius: 25px;
-}
-
-.bilde{
-    display:grid;
-    grid-template-columns: 50% 50%;
 }
 
 .bilde>img{
@@ -94,4 +88,70 @@ p{
     width: 100%;
     height: 100%;
     border-radius: 25px;
+}
+
+.boks1 a:link {
+    text-decoration: underline;
+    color:black;
+
+}
+.boks1 a:visited {
+    text-decoration: none;
+    color:black;
+
+}
+     
+.boks1 a:hover {
+       text-decoration: underline;
+       color: blanchedalmond;
+}
+
+  
+.boks1 a:active {
+       text-decoration: underline;
+     
+}
+
+.boks a:link {
+    text-decoration: underline;
+    color:black;
+
+}
+.boks1 a:visited {
+    text-decoration: none;
+    color:black;
+
+}
+     
+.boks a:hover {
+       text-decoration: underline;
+       color: blanchedalmond;
+}
+
+  
+.boks a:active {
+       text-decoration: underline;
+     
+}
+   
+@media screen and (min-width: 800px){
+    .boks1{
+        display:grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .boks2{
+        display:grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .boks3{
+        display:grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .bilde{
+        display:grid;
+        grid-template-columns: 50% 50%;
+    }
 }

@@ -4,7 +4,6 @@ body {
     width: 80%;
     background-image: url("../images/solnedgang.jpg");
     background-size: cover; 
-    
 
 }
 
@@ -20,46 +19,74 @@ header ul{
     box-sizing: border-box;
   }
 
-  .dropbtn{
-      background-color: crimson;
-      color: white;
-      font-size: 18px;
-      padding: 18px;
-      border: none;
-      cursor: pointer;
-  }
-
-  .dropbtn:hover, .dropbtn:focus{
-      background-color: cyan;
-  }
-
 .dropdown{
+    display:inline-block;
+    position:relative;
+}
+
+.dropdown button{
     position: relative;
-    display: inline-block;
+    width: 100px;
+    height: 90px;
+    border:none;
+    padding: 16px 36px;
+    background-color: rgb(23, 30, 121);
+    color: white;
+    transition: .3s;
+    cursor: pointer;
 }
-
-.dropdown-content {
-    display: none;
+.dropdown button::before,
+.dropdown button:after{
     position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+}
+
+
+.dropdown:hover button{
+    background-color: rgb(53, 88, 184);
+}
+
+.dropdown div{
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     z-index: 1;
+    visibility: hidden;
+    position: absolute;
+    min-width: 100%;
+    opacity: 0;
+    transition: .3s;
 }
 
-.dropdown-content a{
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+.dropdown:hover div{
+    visibility: visible;
+    opacity: 1;
 }
 
-.dropdown-content a:hover {background-color: #ddd}
+.dropdown div a{
+    display:block;
+    text-decoration:none;
+    padding:8px;
+    color:#000;
+    transition: .1s;
+    white-space: nowrap;
+}
 
-.show {display:block;}
+.dropdown div a:hover{
+    background-color: rgba(65, 100, 153, 0.911);
+    color: #fff;
 
+}
 
-.minAmna{
+button{
+    font-size: 20px;
+
+}
+
+.minA{
     font-family: 'Outfit', sans-serif;
     border: 3px solid rgb(18, 58, 145) ;
     border-style: solid;
@@ -97,9 +124,9 @@ p {
 }
 
 
-.minNana{
+.minN{
     font-family:  'Outfit', sans-serif;
-    border: 3px solid rgba(223, 9, 195, 0.075) ;
+    border: 3px solid rgba(170, 42, 153, 0.815) ;
     border-style: solid;
     background-color: rgba(223, 9, 195, 0.075) ;
     display: flex;
@@ -113,7 +140,7 @@ p {
     float: right;
 }
 
-.tekst1.minNana {
+.tekst1.minN {
     max-width: 10px;
     display: flex;
 }
@@ -124,7 +151,7 @@ p {
 }
 
 
-.minTiril{
+.minT{
     font-family: 'Outfit', sans-serif;
     border: 3px solid rgba(230, 135, 97, 0.473) ;
     border-style: solid;
@@ -139,7 +166,7 @@ p {
     float: right;
 }
 
-.tekst2.minTiril {
+.tekst2.minT{
     max-width: 10px;
     display: flex;
 }
@@ -150,7 +177,7 @@ p {
 }
 
 
-.minMathu{
+.minM{
     font-family: 'Outfit', sans-serif;
     border: 3px solid rgb(0, 5, 15);
     border-style: solid;
@@ -158,6 +185,7 @@ p {
     display: flex;
     flex-direction: column;
     padding: 3rem;
+    
 }
 
 .picture3 {
@@ -165,10 +193,11 @@ p {
     float: right;
 }
 
-.tekst3.minMathu {
+.tekst3.minM{
     max-width: 10px;
     display: flex;
 }
+
 
 .p-container3{
     width: 70%;
