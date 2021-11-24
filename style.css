@@ -18,7 +18,7 @@ header ul {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
     list-style-type: none;
-    background-color: #855c85;
+    background-color: #b15e69;
     padding: 2rem;
     margin: 0 1rem;
     border-radius: 25px;
@@ -34,30 +34,16 @@ header ul li a{
     grid-template-columns: 50% 50%;
 }
 
-.førsteInntrykk{
+.førsteInntrykk, .datatorget, .funfacts{
     margin: 1rem;
     padding: 1rem;
-    background-color: #ac78ac;
-    border-radius: 25px;
-}
-
-.datatorget{
-    margin: 1rem;
-    padding: 1rem;
-    background-color: #ac78ac;
+    background-color: #8a444d;
     border-radius: 25px;
 }
 
 .boks2{
     display:grid;
     grid-template-columns: 50% 50%;
-}
-
-.funfacts{
-    margin: 1rem;
-    padding: 1rem;
-    background-color: #ac78ac;
-    border-radius: 25px;
 }
 
 .boks2 > img{
@@ -69,6 +55,10 @@ header ul li a{
 
 h1, h2{
     text-align: center;
+}
+
+h1{
+    color:rgb(204, 163, 163);
 }
 
 p, h1, h2, li{
