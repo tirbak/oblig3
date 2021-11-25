@@ -10,7 +10,7 @@
 body{
     background-image: url("images/pexels-mathias-pr-reding-10246142.jpg");
     background-size: cover; 
-    background-color:rgb(226, 201, 173);
+    background-color:rgb(240, 213, 182);
 }
 
 header ul {
@@ -30,21 +30,14 @@ header ul li a{
     text-transform: uppercase;
 }
 
-.førsteInntrykk, .datatorget, .funfacts{
+.førsteInntrykk, .datatorget, .funfacts, .samfunnsverdier, .programmer, .internett{
     margin: 1rem;
     padding: 1rem;
     background-color: #CE8736;
     border-radius: 25px;
 }
 
-.samfunnsverdier, .Programmer, .internett{
-    margin: 1rem;
-    padding: 1rem;
-    background-color: #CE8736;
-    border-radius: 25px;
-}
-
-.boks2 img{
+img{
     width: 100%;
     border-radius: 25px;
     padding: 1rem;
@@ -138,13 +131,6 @@ p, li{
      
 }
 
-.paragraf1 .bilde2 img{
-    width: 100%;
-    border-radius: 25px;
-    padding: 1rem;
-    height: 100%;
-}
-
    
 @media screen and (min-width: 800px){
     .boks1{
@@ -171,4 +157,48 @@ p, li{
         display:grid;
         grid-template-columns: 50% 50%;
     }
+
+    .paragraf2{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+
+
+.mainContainer{
+    position: relative;
+    width: 250px;
+    height: 320px;
+}
+
+.theCard{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+.theCard:hover{
+    transform: rotateY(180deg);
+}
+
+.theFront{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #ffc728;
+    color: #333;
+}
+
+.theBack{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #fafafa;
+    color: #333;
+    transform: rotateY(180deg);
 }
