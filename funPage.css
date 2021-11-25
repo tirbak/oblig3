@@ -3,8 +3,7 @@ body {
     padding: 0;
     width: 80%;
     background-image: url("../images/solnedgang.jpg");
-    background-size: cover; 
-
+    background-size: cover;
 }
 
 header ul{
@@ -13,7 +12,6 @@ header ul{
     justify-items: center;
     list-style-type: none;
 }
-
 
 * {
     box-sizing: border-box;
@@ -25,29 +23,26 @@ header ul{
 }
 
 .dropdown button{
-    position: relative;
-    width: 100px;
-    height: 90px;
-    border:none;
-    padding: 16px 36px;
-    background-color: rgb(23, 30, 121);
-    color: white;
-    transition: .3s;
-    cursor: pointer;
+    background-color: rgba(111, 0, 255, 0.384);
+      height: 100px;
+      position: relative;
+      width: 20px;
 }
-.dropdown button::before,
+
 .dropdown button:after{
-    position: absolute;
+    background: rgba(111, 0, 255, 0.555);
     content: "";
-    left: 50px;
-    top: 0;
-    width: 50px;
-    height: 80px;
+    height: 20px;
+    left: -40px;
+    position: absolute;
+    top: 40px;
+    width: 100px;
 }
 
-
-.dropdown:hover button{
-    background-color: rgb(53, 88, 184);
+.dropdown:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
 }
 
 .dropdown div{
@@ -78,16 +73,14 @@ header ul{
 .dropdown div a:hover{
     background-color: rgba(65, 100, 153, 0.911);
     color: #fff;
-
 }
 
 button{
     font-size: 20px;
-
 }
 
 .minA{
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     border: 3px solid rgb(18, 58, 145) ;
     border-style: solid;
     background-color: rgba(95, 150, 182, 0.075);
@@ -125,7 +118,7 @@ p {
 
 
 .minN{
-    font-family:  'Outfit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     border: 3px solid rgba(170, 42, 153, 0.815) ;
     border-style: solid;
     background-color: rgba(223, 9, 195, 0.075) ;
@@ -152,7 +145,7 @@ p {
 
 
 .minT{
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     border: 3px solid rgba(230, 135, 97, 0.473) ;
     border-style: solid;
     background-color: rgba(230, 135, 97, 0.329);
@@ -178,7 +171,7 @@ p {
 
 
 .minM{
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     border: 3px solid rgb(0, 5, 15);
     border-style: solid;
     background-color: rgba(0, 5, 15, 0.63);
