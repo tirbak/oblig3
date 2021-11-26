@@ -4,6 +4,8 @@ body {
     width: 80%;
     background-image: url("../images/solnedgang.jpg");
     background-size: cover;
+    text-align: justify;
+    text-align: center;
 }
 
 header ul{
