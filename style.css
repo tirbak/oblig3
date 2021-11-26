@@ -5,12 +5,16 @@
 
 *{
     box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body{
-    background-image: url("images/pexels-mathias-pr-reding-10246142.jpg");
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(105, 105, 105, 0.75),rgba(196, 181, 181, 0.75)), url("../images/gulbakgrunn.jpg");
     background-size: cover; 
-    background-color:rgb(240, 213, 182);
+    background-position: center; 
 }
 
 header ul {
@@ -18,9 +22,9 @@ header ul {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
     list-style-type: none;
-    background-color: #CE8736ab;
+    background-color: #cc975bab;
     padding: 2rem;
-    margin: 0 1rem;
+    margin: 1rem;
     border-radius: 25px;
 }
 
@@ -30,10 +34,14 @@ header ul li a{
     text-transform: uppercase;
 }
 
-.førsteInntrykk, .datatorget, .funfacts, .samfunnsverdier, .programmer, .internett{
+header ul li a:hover{
+    color: blanchedalmond;
+}
+
+article{
     margin: 1rem;
     padding: 1rem;
-    background-color: #CE8736;
+    background-color: #c5945b;
     border-radius: 25px;
 }
 
@@ -62,151 +70,77 @@ p, li{
 }
 
 .funfacts > ul > li{
+    text-indent: 2em;
     list-style-type: none;
 }
 
 .funfacts > ul > li::before{
-    content: "\1F341";
+    content: "\2728";
 }
 
-.boks{
-    margin: 2rem 1rem;
-    padding: 1rem;
-    background-color: #CE8736;
-    border-radius: 25px;
-}
-
-.bilde > img{
+img{
     padding: 1rem;
     width: 100%;
     height: 100%;
     border-radius: 25px;
 }
 
-.paragraf1 a:link {
-    text-decoration: underline;
-    color:black;
+.natur{
+    margin: 0.25rem 0.25rem;
+    padding: 0.25rem;
+    background-color: #8cb4586c;
+    border-radius: 25px;
 }
 
-.boks1 > h1{
+h1, h2{
     font-weight: 900;
 }
 
-.paragraf1 a:visited {
+article > p> a:visited {
     text-decoration: none;
     color:black;
-
 }
      
-.paragraf1 a:hover {
-       text-decoration: underline;
-       color: blanchedalmond;
+article > p> a:hover {
+    text-decoration: underline;
+    color: blanchedalmond;
 }
 
-  
-.paragraf1 a:active {
-       text-decoration: underline;
-     
-}
 
-.internett a:link {
+article > p> a:link {
     text-decoration: underline;
     color:black;
 
 }
-.internett a:visited {
-    text-decoration: none;
+
+article > p > a:visited{
+    text-decoration: underline;
     color:black;
-
-}
-     
-.paragraf1 a:hover {
-       text-decoration: underline;
-       color: blanchedalmond;
-}
-
-  
-.boks a:active {
-       text-decoration: underline;
-     
 }
 
    
 @media screen and (min-width: 800px){
-    .boks1{
-        display:grid;
-        grid-template-columns: 50% 50%;
-    }
-
-    .boks2{
-        display:grid;
-        grid-template-columns: 50% 50%;
-    }
-
-    .paragraf1{
-        display:grid;
-        grid-template-columns: 50% 50%;
-    }
-
-    .boks3{
-        display:grid;
-        grid-template-columns: 50% 50%;
-    }
-
-    .bilde{
-        display:grid;
-        grid-template-columns: 50% 50%;
-    }
-
-    .paragraf2{
+    .kolonner{
         display: grid;
         grid-template-columns: 50% 50%;
     }
 }
 
-
-
-.mainContainer{
-    position: relative;
-    width: 250px;
-    height: 320px;
+.skoleBildet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.theCard{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: all 0.5s ease;
+.skoleBildet:hover{
+    cursor:pointer;
 }
 
-.theCard:hover{
-    transform: rotateY(180deg);
-}
-
-.theFront{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    background: #ffc728;
-    color: #333;
-    text-align: center;
-    font-family: 'zilla slab', sans-serif;
-    border-radius: 20px;
-    font-size: 13px;
-}
-
-.theBack{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    background: #5fcf80;
-    color: #333;
-    text-align: center;
-    font-family: 'zilla slab', sans-serif;
-    border-radius: 20px;
-    font-size: 13px;
-    transform: rotateY(180deg);
+.skoleBildet img{
+    width: 320px;
+	height: 320px;
+	border-radius: 50%;
+	border: 6px solid whitesmoke;
+	box-shadow: 4px 4px 15px 4px rgba(0, 0, 0, 0.5);
+	margin-bottom: 1rem;
 }
